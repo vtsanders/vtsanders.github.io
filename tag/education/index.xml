@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>education | Da Venchei Codes</title>
+    <link>https://davencheicodes.com/tag/education/</link>
+      <atom:link href="https://davencheicodes.com/tag/education/index.xml" rel="self" type="application/rss+xml" />
+    <description>education</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Venchei Sanders © 2020</copyright><lastBuildDate>Mon, 08 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://davencheicodes.com/media/share_image.jpeg</url>
+      <title>education</title>
+      <link>https://davencheicodes.com/tag/education/</link>
+    </image>
+    
+    <item>
+      <title>Reflections on RStudio::Conf 2019 &amp; 2020</title>
+      <link>https://davencheicodes.com/post/2020-06-08-rstudio2020-thoughts-and-reflections/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://davencheicodes.com/post/2020-06-08-rstudio2020-thoughts-and-reflections/</guid>
+      <description>
+&lt;link href=&#34;index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;about-my-first-conference-experience&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;About my first conference experience&lt;/h2&gt;
+&lt;p&gt;A year ago, My &lt;a href=&#34;https://www.shipt.com&#34;&gt;Shiptmate&lt;/a&gt;, Nathan and I went to our first Data Science conference, &lt;a href=&#34;https://rstudio.com/resources/rstudioconf-2019/&#34;&gt;RStudio::Conf 2019&lt;/a&gt; in Austin,&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:welcome&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2019/welcome.jpg&#34; alt=&#34;RStudio::Conf 2019 Welcome Presentation&#34; width=&#34;1104&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: RStudio::Conf 2019 Welcome Presentation
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;It was there that I realized the existence of a large and welcoming community of lovers of not only R, RStudio, et al but also of people. For the first two days of the conference I attended the Deep Learning workshop and Nathan the Tidyverse workshop. I was exposed to deep learning models such as Neural Networks, &lt;a href=&#34;https://www.r-bloggers.com/time-series-deep-learning-forecasting-sunspots-with-keras-stateful-lstm-in-r/&#34;&gt;Long Short Term Memory (LSTM)&lt;/a&gt;, etc.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images_2019/aclu_full_join.jpg&#34; width=&#34;45%&#34; style=&#34;float:right; padding:10px&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We also stayed to attend the conference. It was there that I was exposed to passionate R developers, talks, and seminars. I heard David Robinson give a presentation called &lt;a href=&#34;https://rstudio.com/resources/rstudioconf-2019/the-unreasonable-effectiveness-of-public-work/&#34;&gt;The unreasonable effectiveness of public work&lt;/a&gt;. I also heard a really cool presentation on computer science education called &lt;a href=&#34;https://rstudio.com/resources/rstudioconf-2019/explicit-direct-instruction-in-programming-education/&#34;&gt;Explicit Direct Instruction in Programming Education&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;During one of the sessions, I attended Brooke Watson’s presentation for the ACLU titled &lt;a href=&#34;https://rstudio.com/resources/rstudioconf-2019/r-at-the-aclu-joining-tables-to-to-reunite-families/&#34;&gt;R at the ACLU: Joining tables to to reunite families&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;One neat feature of a conference is the entertainment. The entertainment at RStudio::Conf 2019 was Willie Nelson’s son, Luke Nelson. He along with a few other bands gave performances at the famous Austin City Limits. Here’s a clip from his performance.&lt;/p&gt;
+&lt;center&gt;
+&lt;video controls&gt;
+&lt;source src=&#34;./images_2019/luke_nelson.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;/center&gt;
+&lt;p&gt;Here are some pictures that I took during the conference; among others these include, the gghighlight digital poster, &lt;a href=&#34;https://rstudio.com/resources/rstudioconf-2019/melt-the-clock-tidy-time-series-analysis/&#34;&gt;Earo Wang’s&lt;/a&gt; presentation on TSibble and Tidy Time Series Analysis (all part of the &lt;a href=&#34;https://tidyverts.org/&#34;&gt;Tidy Verts&lt;/a&gt;).&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:gghighlight&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2019/gghighlight.jpg&#34; alt=&#34;GGHighlight E-Poster&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: GGHighlight E-Poster
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:earo&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2019/earo_wang.jpg&#34; alt=&#34;Earo Wang Presentation&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 3: Earo Wang Presentation
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:funny&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2019/funny_comment.jpg&#34; alt=&#34;Boston Accent: Git Outta Here 😂&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 4: Boston Accent: Git Outta Here 😂
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:you&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2019/you.jpg&#34; alt=&#34;Hadley: YOU, you get a car! 🤣...&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 5: Hadley: YOU, you get a car! 🤣…
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;images_2019/2020_conf.jpg&#34; width=&#34;45%&#34; style=&#34;float:right; padding:10px&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This brought us to the end of our visit to Austin, Texas and the conclusion of the 2019 RStudio::Conf with the announcement of the 2020 RStudio::Conf in San Francisco, CA.&lt;/p&gt;
+&lt;p&gt;The biggest takeaway from this conference for me may have been David Robinson’s presentation on public works and sharing your findings for community and personal growth.&lt;/p&gt;
+&lt;p&gt;That talk inspired me to create this site and hopefully (🤞) inspire minorities to journey into the field of Data Science. I was definitely pumped to learn more about machine learning and to attend the 2020 conference is San Francisco.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;about-my-second-conference-experience&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;About my second conference experience&lt;/h2&gt;
+&lt;p&gt;During the month of June 2019, I relocated to my current company’s west coast office in San Francisco, CA. This gave me the chance to attend the 2020 RStudio::Conf without the cost of housing for the week.&lt;/p&gt;
+&lt;p&gt;When you attend a conference you get some solid swag. Here are a few pics.&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:fshirt&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/shirt_front.jpg&#34; alt=&#34;Front of tshirt&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 6: Front of tshirt
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:rshirt&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/shirt_rear.jpg&#34; alt=&#34;Rear of tshirt&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 7: Rear of tshirt
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:name&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/name.jpg&#34; alt=&#34;Should have wrote @davencheicodes... 2021!?&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 8: Should have wrote &lt;span class=&#34;citation&#34;&gt;@davencheicodes&lt;/span&gt;… 2021!?
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:csheet&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/cheat_sheet.jpg&#34; alt=&#34;Cheat Sheet&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 9: Cheat Sheet
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:reticulate&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/reticulate.jpg&#34; alt=&#34;Reticulate Cheatsheet&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 10: Reticulate Cheatsheet
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:forecasting&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/forecasting.jpg&#34; alt=&#34;Wish I had a clone...&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 11: Wish I had a clone…
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;This year, I attended the Applied Machine Learning workshop taught by Max Kuhn. His workshop was fairly intense. It focused on topics including Regression, Decision Trees, and Clustering methods, all in two days. We implemented those methods using the &lt;a href=&#34;https://www.tidymodels.org/&#34;&gt;tidymodels&lt;/a&gt; framework. I loved it and would highly recommend!&lt;/p&gt;
+&lt;p&gt;On day two, &lt;a href=&#34;https://twitter.com/hadleywickham&#34;&gt;Hadley Wickham&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/topepos/&#34;&gt;Max Kuhn&lt;/a&gt; signed their books &lt;a href=&#34;https://adv-r.hadley.nz/&#34;&gt;Advanced R&lt;/a&gt; and &lt;a href=&#34;http://www.feat.engineering/&#34;&gt;Feature Engineering and Selection&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:hadleysig&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/hadley_sig.jpg&#34; alt=&#34;Got my personal copy signed!&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 12: Got my personal copy signed!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:maxsig&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/max_sig.jpg&#34; alt=&#34;Thanks Max!&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 13: Thanks Max!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The final two days are the conference. Here are some pics of the keynote and presentations that I saw.&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:welcome2020&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/countdown_2002.jpg&#34; alt=&#34;Countdown to the 2020 RStudio::Conf!...&#34; width=&#34;2016&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 14: Countdown to the 2020 RStudio::Conf!…
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:keynote1&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/keynote1.jpg&#34; alt=&#34;A keynote video&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 15: A keynote video
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:keynote2&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/keynote2.jpg&#34; alt=&#34;Y&#39;all we made it!&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 16: Y’all we made it!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:keynote3&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/keynote3.jpg&#34; alt=&#34;Value&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 17: Value
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:hadley&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/hadley.jpg&#34; alt=&#34;Hadley Wickham presentation&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 18: Hadley Wickham presentation
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:hexagonwall&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/hexagon_wall.jpg&#34; alt=&#34;Hexagon Wall&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 19: Hexagon Wall
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:wallclose&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/hexagon1.jpg&#34; alt=&#34;Up close&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 20: Up close
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:excel&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/excel_joke.jpg&#34; alt=&#34;Excel Joke&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 21: Excel Joke
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:pythonandr&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/pythonandr.jpg&#34; alt=&#34;Use R in Production!&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 22: Use R in Production!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:busjoke&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/business_joke.jpg&#34; alt=&#34;Preach Brotha. Come on Stakeholders. Ask better questions.&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 23: Preach Brotha. Come on Stakeholders. Ask better questions.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:lessons&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/lesson_learned.jpg&#34; alt=&#34;Lessons&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 24: Lessons
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:hyndman&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/hyndman.jpg&#34; alt=&#34;Rob Hyndman #TimeSeries&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 25: Rob Hyndman #TimeSeries
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:nssd&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/nssd.jpg&#34; alt=&#34;Not So Standard Deviations Ep. 100&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 26: Not So Standard Deviations Ep. 100
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:hilaryRoger&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/hillary_roger.jpg&#34; alt=&#34;Hilary Parker and Roger Peng&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 27: Hilary Parker and Roger Peng
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:2021conf&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images_2020/2021conf.jpg&#34; alt=&#34;RStudio::Conf 2021 is in Orlando, FL!&#34; width=&#34;85%&#34; height=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 28: RStudio::Conf 2021 is in Orlando, FL!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;closing-thoughts-and-remarks&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Closing thoughts and remarks&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;images_2020/rstudio_friends.jpeg&#34; width=&#34;45%&#34; height=&#34;45%&#34; style=&#34;float:right; padding:10px&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This year, my biggest takeaways include not only the lessons learned during the workshop but also the cool friendships built with others across the United States. I currently use the Tidy Models framework that Max Kuhn taught us. Moreover, I now understand MARS models. A model type that is used by my current employer - I’ll touch more on this in a later post.&lt;/p&gt;
+&lt;p&gt;During the workshop, I sat beside Maliha and later in the conference I met her boss lady, Kelly. Moreover, I made some great connections with other Data Scientist; some at Blue Cross Blue Shield, others at FAANG (Facebook, Amazon, Apple, Netflix, Google). I was also able to ask Yihui Xie a RMarkdown question!&lt;/p&gt;
+&lt;p&gt;It’s been really great to take the lessons learned at this conference and leverage them in my everyday work. I would say that conference has a high return on time and money spent; RStudio::Conf is one such conference. I would highly recommend attending at least one. I personally believe in my favorite economists &lt;a href=&#34;http://www.rajchetty.com/&#34;&gt;Raj Chetty&lt;/a&gt; his work at &lt;a href=&#34;https://opportunityinsights.org/&#34;&gt;Opportunity Insights&lt;/a&gt;, specifically insights and thoughts around &lt;a href=&#34;http://www.equality-of-opportunity.org/assets/documents/inventors_summary.pdf&#34;&gt;Lost Einstiens&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks for checking out my first post. Stream of consciousness: I’m hoping to write at least once a month. I have completed the framework for my next two posts (one about developing this site, hosting, and the markdown image struggle 😭) and another about data analytics for a company machine learning project; however, current employer has dibs first for their &lt;a href=&#34;https://shipt.tech/&#34;&gt;Medium Blog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I’m looking forward to sharing more as journey into the space.&lt;/p&gt;
+&lt;p&gt;See ya in Orlando in 2021 and ROLL TIDE! 👋&lt;/p&gt;
+&lt;p&gt;-V&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
