@@ -1,0 +1,49 @@
+---
+title: testing_thumb
+author: Venchei Sanders
+date: '2020-04-27'
+slug: testing-thumb
+categories: []
+tags: []
+description: ~
+jobDate: 201
+work: []
+techs: []
+summary: Reflections from my RStudio::Conf experience and conferencing in general
+designs: []
+image: ~/files/images/blog_images/golden_gate.jpg
+projectUrl: ~
+testimonial:
+  name: ~
+  role: ~
+  image: ~
+  text: ~
+---
+
+
+
+
+
+
+
+```{r include = FALSE}
+knitr::opts_chunk$set(eval = FALSE, collapse = TRUE, comment = NA, tidy = FALSE, fig.height = 3, fig.width = 3)
+```
+
+
+Here are some details about the portfolio settings.
+
+{{< figure src="/files/images/blog_images/golden_gate.jpg" caption="Example of Portfolio page" >}}
+
+
+This year's [RStudio::Conf](https://resources.rstudio.com/rstudio-conf-2020) was held in San Francicso where I currently live. 
+
+Having throughly enjoyed my experience from the 2019 RStudio::Conf in Austin, Texas, I immediately registered not only to attend the conference but also to attend the workshop on Machine Learning taught by [Max Kuhn](https://twitter.com/topepos?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor). 
+
+# Day 1
+
+{{< tweet-single 1141709586983981057 >}}
+
+
+
+

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blogdown | Da Venchei Codes</title>
+    <link>/tag/blogdown/</link>
+      <atom:link href="/tag/blogdown/index.xml" rel="self" type="application/rss+xml" />
+    <description>blogdown</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Venchei Sanders © 2020</copyright><lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/share_image.jpeg</url>
+      <title>blogdown</title>
+      <link>/tag/blogdown/</link>
+    </image>
+    
+    <item>
+      <title>How I made Da Venchei Codes: Part I</title>
+      <link>/post/2020-08-17-blogdown-and-hugo/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-08-17-blogdown-and-hugo/</guid>
+      <description>
+
+
+&lt;p&gt;So you are thinking about creating a website? Awesome! &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;Blogdown&lt;/a&gt;, &lt;a href=&#34;https://gohugo.io/&#34;&gt;HUGO&lt;/a&gt;, and &lt;a href=&#34;https://rmarkdown.rstudio.com/lesson-1.html&#34;&gt;RMarkdown&lt;/a&gt; are here to save us!&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&#34;images/justice_league.gif&#34; style=&#34;display: block; margin: auto;&#34; /&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;If you read my first post, I wrote about David Robinson’s speach on sharing &lt;a href=&#34;https://rstudio.com/resources/rstudioconf-2019/the-unreasonable-effectiveness-of-public-work/&#34;&gt;public works and it’s effectiveness&lt;/a&gt;. I found his talk compelling but I never made the time to actually develop something with it. Fast forward a ~year later and I finally did it. YAY!!! I think the idea of making a site felt overwhelming; however, it’s really easy. I wanted to write a post about how to make a beautiful website with free open source tools. Moreover, if you have not shared any of your public works I want to encourage you to follow this guide and put yourself out there!.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/put_yourself_out_there.gif&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;If you’re reading this then perhaps you too have some thoughts or work that could be of benefit o the world. Perhaps you would like to make a site but you don’t know anything about web development. Great! This guide is for you.&lt;/p&gt;
+&lt;p&gt;I’m assuming you have working knowledge of R, Markdown, and can leverage Stack Overflow and related tech message boards for help. Moreover, these instructions are not all inclusive and may leave out steps - hence, one’s ability to leverage tech message boards would be useful. This guide should (I) get you up and running locally, then (II) through deployment via Github Pages or Google Domains.&lt;/p&gt;
+&lt;div id=&#34;setup&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Setup&lt;/h2&gt;
+&lt;p&gt;To start, we’re going to need a theme from &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt;. I chose the &lt;a href=&#34;https://sourcethemes.com/academic/&#34;&gt;Academic&lt;/a&gt; theme for Da Venchei Codes. Next, lets open RStudio and start an R Project. An R Project is useful because RStudio will recognize your project as a website and surface the appropriate build tools in the interface.&lt;/p&gt;
+&lt;p&gt;For this walk-through, I’m going to use the &lt;a href=&#34;https://github.com/themefisher/navigator-hugo&#34;&gt;Navigator Hugo Theme&lt;/a&gt;. Let’s start by creating a new folder in documents or on the desktop. I’m naming it “davenchei_examplesite”.&lt;/p&gt;
+&lt;p&gt;Next, let’s open RStudio then, create a new project then, create a directory, and download the theme and it’s dependencies.&lt;/p&gt;
+&lt;div class=&#34;row&#34;&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;images/proj_1.png&#34; width=&#34;1440&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;images/proj_2.png&#34; width=&#34;40%&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Now select New Directory then scroll to Website using blogdown.&lt;/p&gt;
+
+&lt;div class=&#34;row&#34;&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;images/create_project.png&#34; width=&#34;537&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;images/project_type.png&#34; width=&#34;539&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;We will create the website as part of a subdirectory to /davenchei_examplesite/. Enter a name for the directory -I chose “source_files”; then enter the theme’s github address -“themefisher/navigator-hugo”. You can also clone the repo, or follow the instructions &lt;a href=&#34;https://bookdown.org/yihui/blogdown/other-themes.html&#34;&gt;here&lt;/a&gt;. You can load the demo site into the Viewer by clicking “Addins” then “Serve Site” buttons.&lt;/p&gt;
+&lt;div class=&#34;row&#34;&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;images/directory_name.png&#34; width=&#34;85%&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;images/demo_site.png&#34; width=&#34;1552&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In the viewer, you’ll see the mobile version of the demo site. Let’s quickly modify the underlying files by going to the pane containing “Files, Plots, Packages, Help, etc”. Navigate to the directory containing the project and click on the “config.toml” file. This configuration file contains the tools needed to manipulate the basic structure for this theme. Here you would insert Google Analytics for User Engagement event tracking, or change the website URL (at the top), Page Title, etc. I highly suggest purchasing a website domain with Google Domains and/or purchasing a GSuite account to own both email and website domain for your direct communication to external parties.&lt;/p&gt;
+&lt;p&gt;Since we’ll be hosting via github pages, let’s start by changing the Publishing Directory to “../davenchei_examplesite.github.io”. This will be the folder that we will push to github for deployment. Moreover, changing the publishing directory allows for greater flexibility in terms of having control over the security and version control for the site - all data and changes are local until deployment. You can created a private Repo and change that in github later if you’d like.&lt;/p&gt;
+&lt;p&gt;Let’s change the title by going to the section labeled “# Hero Area Section” and replacing the heading from “We love to make brands grow” to “We love Da Venchei Codes”. Let’s change the button text from “Know More” to “Meet Da Venchei”. Finally, Let’s change the URL from &lt;a href=&#34;https://themefisher.com/&#34; class=&#34;uri&#34;&gt;https://themefisher.com/&lt;/a&gt; to &lt;a href=&#34;https://www.davencheicodes.com/&#34; class=&#34;uri&#34;&gt;https://www.davencheicodes.com/&lt;/a&gt; and the description from “Lorem ipsum dolor…” to “This is a Da Venchei Tutorial.”&lt;/p&gt;
+&lt;div class=&#34;row&#34;&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;images/hero_before.png&#34; width=&#34;1032&#34; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+Hero Before
+&lt;/figcaption&gt;
+&lt;/div&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;img src=&#34;images/hero_after.png&#34; width=&#34;1028&#34; /&gt;
+&lt;figcaption&gt;
+Hero After
+&lt;/figcaption&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;That essentially it. If we can modify files, this way, then WE CAN MAKE A WEBSITE!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/celebrate.gif&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Next, let’s create our first post.&lt;/p&gt;
+&lt;p&gt;From the Viewer pane, click the menu bar at the top, followed by EN Blog; here you will see every blog article written in the demo site.&lt;/p&gt;
+&lt;div class=&#34;row&#34;&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;images/example_blog.png&#34; width=&#34;429&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;images/view_demo.png&#34; width=&#34;435&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+Now, let’s click on Files; while in the directory for the project click on: content -&amp;gt; blog. Here you will see the underlying files that contain the data needed to produce a blog post. Those files are RMarkdown or Markdown files.
+&lt;div class=&#34;row&#34;&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;images/blog1.png&#34; width=&#34;433&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;images/contents.png&#34; width=&#34;434&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;When I make an article for Da Venchei Codes, I write my articles in folders. So let’s make a post using that process. Create a new folder in the blog directory. I’m calling it davenchei_examplepost. Near the top-left of RStudio, click Addins, then New Post.&lt;/p&gt;
+&lt;div class=&#34;row&#34;&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;images/new_folder.png&#34; width=&#34;431&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;images/new_post.png&#34; width=&#34;269&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Next, add a title for the post as well as an author. Then change the subdirectory to /blog/davenchei_exmaplepost. Furthermore, you can see that I added Categories and Tags, and changed the format to .Rmd.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/example_post.png&#34; width=&#34;1552&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/example_post2.png&#34; width=&#34;1552&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Categories and Tags allow for easy and intelligent sorting of material posted to the site. Categories will organize your posts in to folders; and you can add tags to posts, making them searchable within your site.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;deployment-hosting&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Deployment / Hosting&lt;/h2&gt;
+&lt;p&gt;I. Github Pages&lt;/p&gt;
+&lt;p&gt;When it comes to deployment and hosting, there is really two critical questions to answer: do you have $10 and would you like a custom domain name? If not, here’s how to use github pages to host the site. If you do want a custom domain, skip down to the section below.&lt;/p&gt;
+&lt;p&gt;If you are unfamiliar, GitHub is a free and open source tool that is used for version control. This tutorial is not about github nor version control. I am assuming you have working knowledge of those ideas and can navigate git at the terminal (or command line). Let’s start by creating a github repository ‘repo’ called davenchei_examplesite.github.io.&lt;/p&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: upper-roman&#34;&gt;
+&lt;li&gt;Google Domains&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;-V&lt;/p&gt;
+&lt;div class=&#34;row&#34;&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

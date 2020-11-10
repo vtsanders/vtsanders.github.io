@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>coursera reviews | Da Venchei Codes</title>
+    <link>/tag/coursera-reviews/</link>
+      <atom:link href="/tag/coursera-reviews/index.xml" rel="self" type="application/rss+xml" />
+    <description>coursera reviews</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Venchei Sanders © 2020</copyright><lastBuildDate>Mon, 28 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/share_image.jpeg</url>
+      <title>coursera reviews</title>
+      <link>/tag/coursera-reviews/</link>
+    </image>
+    
+    <item>
+      <title>Machine Learning with Ng</title>
+      <link>/post/2020-09-28-ml-ng-week1-2/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-09-28-ml-ng-week1-2/</guid>
+      <description>
+
+
+&lt;div id=&#34;genesis&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Genesis&lt;/h2&gt;
+&lt;p&gt;As I continue to work in the data space it is increasingly obvious that I need to close the gap on my fundamental training in Machine Learning concepts and real world best practices. In my current role, I support the ML efforts of my companies’ Data Scientist. Thus to be a better analyst and to grow professionally, I decided to enroll in this Coursera class called &lt;a href=&#34;https://www.coursera.org/learn/machine-learning&#34;&gt;Machine Learning&lt;/a&gt; by Andrew Ng. The reason that I chose Coursera is because Ng’s course was highly recommended by some Data Scientists at my current company as well as some medium blog posts that I have read. If you don’t know, Ng is a machine learning researcher at Stanford and also the Co-Founder of Coursera.&lt;/p&gt;
+&lt;p&gt;The purpose of this series of post is to talk about my experience and learning(s) from the class. I may share some code or post a video of some model implementations in Octave, Python, or R as a work my way through the material. Please feel free to drop me an email or leave a comment with thoughts or advice. Happy Coding! :)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;week-1-recap&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 1 Recap&lt;/h2&gt;
+&lt;p&gt;Week 1 starts off with the usual course introductions followed by Univariate Liner Regression. The week then jumps into Cost Functions and Model Representation followed by Parameter Learning with Gradient Descent. The week then concludes with a review of properties and operations in Linear Algebra.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;week-2-recap&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 2 Recap&lt;/h2&gt;
+&lt;p&gt;Week 2 starts by discussing methods to extend Univariate Linear Regression to accommodate multiple features with Multivariate Linear Regression (MLR). This week also introduces the class to the software the course will leverage, MatLab/Octave. Implementing the models seems to be a fundamental concern of the course so given the level of difficulty, I plan to implement the models in both R and Python. This should give me additional practice using the methods in both R and Python. Furthermore, my IDE for Python is Spyder and the R, RStudio. Octave is a free open source resource. However, the IDE Octave GNU is high unstable and unreliable. For now, I’d suggest writing Octave scripts at the Command Line / Terminal.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;thoughts-and-reflections-on-weeks-1-2-of-courseras-machine-learning&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Thoughts and Reflections on Weeks 1 &amp;amp; 2 of Coursera’s Machine Learning&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
