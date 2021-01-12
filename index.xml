@@ -165,7 +165,7 @@ Figure 3: List Preview
 &lt;div id=&#34;what-about-model-performance&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;What About Model Performance?&lt;/h2&gt;
 &lt;p&gt;How well should a model perform? As my Econometrics Professor Matt Holt would say, “Depends on your Employer”. If we trained our model on data including possible outliers (on the left end of the distribution) then the model will perform poorly. Suppose you run a bank, under-predicting the model’s target (Shop Times for Shipt) could lead to financial ruin.&lt;/p&gt;
-&lt;p&gt;Suppose you’re preparing to run a race or play a basketball game. As the coach, do you want the athlete that has trained for the event with ten smediocre practices or an athlete with 1000 days of varying forms of practice (shooting three pointers, free throws, layups, etc); The data matters &lt;strong&gt;&lt;em&gt;PERIOD&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Suppose you’re a head coach preparing the team for a track meet or basketball game. As the coach, do you want the athlete that has trained for the event with ten mediocre practices or an athlete with 1000 days of varying forms of practice (shooting three pointers, free throws, layups, etc); The data matters &lt;strong&gt;&lt;em&gt;PERIOD&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;When modeling, generalization and representation matters. Stay close to the data and remember, “the data is almost more important than the algorithm.” A clever or fancy algorithm can lose or perform equally to a simpler model with superior data.&lt;/p&gt;
 &lt;p&gt;With that out of the way, let’s get back to the article…&lt;/p&gt;
 &lt;/div&gt;
