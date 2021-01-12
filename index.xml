@@ -112,9 +112,9 @@
 &lt;p&gt;Giving students curated datasets dismisses how the game is played in reality and leaves a hole in the students’ fundamental training. Sometimes you gotta go into the field and actually do some heavy lifting (or shopping).&lt;/p&gt;
 &lt;p&gt;So I open the Shipt Shopper app and see an order such as the following:&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:offercard&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;images/order_offer_og.jpg&#34; alt=&#34;OG-Order Offer Card&#34; width=&#34;40%&#34; /&gt;
+&lt;img src=&#34;images/order_offer_og.jpg&#34; alt=&#34;OG - Order Offer Card&#34; width=&#34;40%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
-Figure 1: OG-Order Offer Card
+Figure 1: OG - Order Offer Card
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Since I want the experience of working as a professional Shipt Shopper, I skate to Foods Co. and shop a couple orders together. I believe (more seasoned) shoppers refer to these as ‘doubles’. This was a rookie mistake.&lt;/p&gt;
@@ -127,13 +127,13 @@ Figure 1: OG-Order Offer Card
 &lt;p&gt;&lt;img src=&#34;images/backpack.jpg&#34; width=&#34;40%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Innovations by the Shipt Product team led to the modern version of the Offer Card where shoppers can now see the underlying order contents via the List Preview.&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:offercard7&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;images/offer_card.jpeg&#34; alt=&#34;Order Offer Card&#34; width=&#34;60%&#34; height=&#34;20%&#34; /&gt;
+&lt;img src=&#34;images/offer_card.jpeg&#34; alt=&#34;NG - Order Offer Card&#34; width=&#34;60%&#34; height=&#34;20%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
-Figure 2: Order Offer Card
+Figure 2: NG - Order Offer Card
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:offercard8&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;images/preview.jpeg&#34; alt=&#34;List Preview&#34; width=&#34;60%&#34; height=&#34;20%&#34; /&gt;
+&lt;img src=&#34;images/preview.jpeg&#34; alt=&#34;List Preview&#34; width=&#34;30%&#34; height=&#34;20%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 3: List Preview
 &lt;/p&gt;
@@ -204,9 +204,9 @@ Figure 4: Order Offer Card
 &lt;p&gt;We’ve observed outliers such as shop times that are negative, null, less than one minute, or – on the extreme right – up to 12 hours. To develop a model that reasonably represents the actual task of shopping, we had to consider the minimum time it takes and remove recorded data that may be incorrectly captured by the system.&lt;/p&gt;
 &lt;p&gt;Below is the distribution of Shop Times at Shipt for single-item orders. This graph has been enhanced with a line to delinate possible outliers and colorized.&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:offercard10&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;images/shop_times_dist1.png&#34; alt=&#34;We see hundreds of zero or negative shop times captured by our database.&#34; width=&#34;1050&#34; /&gt;
+&lt;img src=&#34;images/shop_times_dist1.png&#34; alt=&#34;Our database captured hundreds of zero or negative shop times.&#34; width=&#34;70%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
-Figure 5: We see hundreds of zero or negative shop times captured by our database.
+Figure 5: Our database captured hundreds of zero or negative shop times.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -233,14 +233,11 @@ Figure 5: We see hundreds of zero or negative shop times captured by our databas
 &lt;h2&gt;Why is Industry Different (Part 3)?&lt;/h2&gt;
 &lt;p&gt;I think the dynamics of real world liability is something that is a miss in academic programs; meaning - what is at risk? In predicting shop times, we’d prefer to over-predict than under-predict. If you drive an autonomous vehicle, would you prefer the system over-predict, have a false positive and stop prematurely or under-predict, have a false negative and stop too late?&lt;/p&gt;
 &lt;p&gt;If designing an ABS system that uses computer vision to calculate crash probabilities mid-drive, you’d prefer the system stop early, a false positive, than late or not at all. These dynamics take the problem from ‘fun exercise’ to:&lt;/p&gt;
-&lt;div style=&#34;width:100%;height:0;padding-bottom:56%;position:relative;&#34;&gt;
-&lt;iframe src=&#34;https://giphy.com/embed/3010TVhWwXy2N9OUGQ&#34; width=&#34;100%&#34; height=&#34;100%&#34; style=&#34;position:absolute&#34; frameBorder=&#34;0&#34; class=&#34;giphy&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/3010TVhWwXy2N9OUGQ/giphy.gif&#34; width=&#34;80%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;All funny gifs aside, let’s get back to the article…&lt;/p&gt;
 &lt;p&gt;Let’s assume the store’s perimeter is that of a rectangle, particularly a square, and that information regarding the size of the grocery store is known.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;images/square.png&#34; width=&#34;80%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/square.png&#34; width=&#34;65%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;If you remember from grade school, the area of a square is:&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
    \mbox{(Equation I.) Area of a Square} = (\mbox{Length of the Side}) ^ {2}

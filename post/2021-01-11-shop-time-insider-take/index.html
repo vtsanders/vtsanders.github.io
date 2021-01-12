@@ -788,9 +788,9 @@
 <p>Giving students curated datasets dismisses how the game is played in reality and leaves a hole in the students’ fundamental training. Sometimes you gotta go into the field and actually do some heavy lifting (or shopping).</p>
 <p>So I open the Shipt Shopper app and see an order such as the following:</p>
 <div class="figure" style="text-align: center"><span id="fig:offercard"></span>
-<img src="images/order_offer_og.jpg" alt="OG-Order Offer Card" width="40%" />
+<img src="images/order_offer_og.jpg" alt="OG - Order Offer Card" width="40%" />
 <p class="caption">
-Figure 1: OG-Order Offer Card
+Figure 1: OG - Order Offer Card
 </p>
 </div>
 <p>Since I want the experience of working as a professional Shipt Shopper, I skate to Foods Co. and shop a couple orders together. I believe (more seasoned) shoppers refer to these as ‘doubles’. This was a rookie mistake.</p>
@@ -803,13 +803,13 @@ Figure 1: OG-Order Offer Card
 <p><img src="images/backpack.jpg" width="40%" style="display: block; margin: auto;" /></p>
 <p>Innovations by the Shipt Product team led to the modern version of the Offer Card where shoppers can now see the underlying order contents via the List Preview.</p>
 <div class="figure" style="text-align: center"><span id="fig:offercard7"></span>
-<img src="images/offer_card.jpeg" alt="Order Offer Card" width="60%" height="20%" />
+<img src="images/offer_card.jpeg" alt="NG - Order Offer Card" width="60%" height="20%" />
 <p class="caption">
-Figure 2: Order Offer Card
+Figure 2: NG - Order Offer Card
 </p>
 </div>
 <div class="figure" style="text-align: center"><span id="fig:offercard8"></span>
-<img src="images/preview.jpeg" alt="List Preview" width="60%" height="20%" />
+<img src="images/preview.jpeg" alt="List Preview" width="30%" height="20%" />
 <p class="caption">
 Figure 3: List Preview
 </p>
@@ -880,9 +880,9 @@ Figure 4: Order Offer Card
 <p>We’ve observed outliers such as shop times that are negative, null, less than one minute, or – on the extreme right – up to 12 hours. To develop a model that reasonably represents the actual task of shopping, we had to consider the minimum time it takes and remove recorded data that may be incorrectly captured by the system.</p>
 <p>Below is the distribution of Shop Times at Shipt for single-item orders. This graph has been enhanced with a line to delinate possible outliers and colorized.</p>
 <div class="figure" style="text-align: center"><span id="fig:offercard10"></span>
-<img src="images/shop_times_dist1.png" alt="We see hundreds of zero or negative shop times captured by our database." width="1050" />
+<img src="images/shop_times_dist1.png" alt="Our database captured hundreds of zero or negative shop times." width="70%" />
 <p class="caption">
-Figure 5: We see hundreds of zero or negative shop times captured by our database.
+Figure 5: Our database captured hundreds of zero or negative shop times.
 </p>
 </div>
 </div>
@@ -909,14 +909,11 @@ Figure 5: We see hundreds of zero or negative shop times captured by our databas
 <h2>Why is Industry Different (Part 3)?</h2>
 <p>I think the dynamics of real world liability is something that is a miss in academic programs; meaning - what is at risk? In predicting shop times, we’d prefer to over-predict than under-predict. If you drive an autonomous vehicle, would you prefer the system over-predict, have a false positive and stop prematurely or under-predict, have a false negative and stop too late?</p>
 <p>If designing an ABS system that uses computer vision to calculate crash probabilities mid-drive, you’d prefer the system stop early, a false positive, than late or not at all. These dynamics take the problem from ‘fun exercise’ to:</p>
-<div style="width:100%;height:0;padding-bottom:56%;position:relative;">
-<iframe src="https://giphy.com/embed/3010TVhWwXy2N9OUGQ" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy">
-</iframe>
-</div>
+<p><img src="https://media.giphy.com/media/3010TVhWwXy2N9OUGQ/giphy.gif" width="80%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <p>All funny gifs aside, let’s get back to the article…</p>
 <p>Let’s assume the store’s perimeter is that of a rectangle, particularly a square, and that information regarding the size of the grocery store is known.</p>
-<p><img src="images/square.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><img src="images/square.png" width="65%" style="display: block; margin: auto;" /></p>
 <p>If you remember from grade school, the area of a square is:</p>
 <p><span class="math display">\[
    \mbox{(Equation I.) Area of a Square} = (\mbox{Length of the Side}) ^ {2}
