@@ -34,7 +34,7 @@
   
     
   
-  <meta name="description" content="How Analytics can drive ML Model Development (in Industry)">
+  <meta name="description" content="How Analytics drive ML Model Development (in Industry)">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davencheicodes.com/post/2021-01-11-shop-time-insider-take/">
@@ -318,7 +318,7 @@
   <meta property="og:site_name" content="Da Venchei Codes">
   <meta property="og:url" content="https://davencheicodes.com/post/2021-01-11-shop-time-insider-take/">
   <meta property="og:title" content="Shop Time and the Area of a Square - Industry Insider Take | Da Venchei Codes">
-  <meta property="og:description" content="How Analytics can drive ML Model Development (in Industry)"><meta property="og:image" content="https://davencheicodes.com/post/2021-01-11-shop-time-insider-take/featured.jpg">
+  <meta property="og:description" content="How Analytics drive ML Model Development (in Industry)"><meta property="og:image" content="https://davencheicodes.com/post/2021-01-11-shop-time-insider-take/featured.jpg">
   <meta property="twitter:image" content="https://davencheicodes.com/post/2021-01-11-shop-time-insider-take/featured.jpg"><meta property="og:locale" content="en-us">
   
     
@@ -372,7 +372,7 @@
       "url": "https://davencheicodes.com/images/icon_hu9edd35c8d19bcbbe91efc6de46be8625_97850_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "How Analytics can drive ML Model Development (in Industry)"
+  "description": "How Analytics drive ML Model Development (in Industry)"
 }
 </script>
 
@@ -686,7 +686,7 @@
   <h1>Shop Time and the Area of a Square - Industry Insider Take</h1>
 
   
-  <p class="page-subtitle">How Analytics can drive ML Model Development (in Industry)</p>
+  <p class="page-subtitle">How Analytics drive ML Model Development (in Industry)</p>
   
 
   
@@ -758,7 +758,7 @@
       
 
 
-<p><a href="https://shipt.tech/shop-time-and-the-area-of-a-square-dcc9cb055368">Shop Time and the Area of a Square</a> is an article written on July 20th, 2020 for my current employer to articulate how we leveraged data analytics to understand the minimum shop time for finding one item at a retailer. Upon further review, that process has taught me a lot about developing machine learning models in industry. So I’d like revisit the article with some additional commentary and insights on How Analytics can drive ML Model Development (in industry).</p>
+<p><a href="https://shipt.tech/shop-time-and-the-area-of-a-square-dcc9cb055368">Shop Time and the Area of a Square</a> is an article written on July 20th, 2020 for my current employer, a grocery delivery company called Shipt, to articulate how we leveraged data analytics to understand the minimum shop time for finding one item at a retailer. Upon further review, that process has taught me a lot about developing machine learning models in industry. So I’d like to revisit the article with some additional commentary and insights on how Analytics drive ML Model Development (in industry).</p>
 <p>From time to time, I enjoy listening to the Lex Fridman Podcast and recently I heard him interviewing Charles Isbell and Michael Littman; for anyone attempting to enter the space and deploy a machine learning model, the clip below is the ML gospel; I hope you enjoy it. 😄</p>
 <p>An astute modeler should know that a clever or fancy algorithm can lose or perform equally to a simpler model with superior data.</p>
 
@@ -767,10 +767,10 @@
 </div>
 
 <p><br></p>
-<p>So if you didn’t know - it’s the data stupid! Stay close to the data because she’s your friend. The entire interview can be heard/watched <a href="https://youtu.be/yzMVEbs8Zz0">here</a>. <a href="https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf">A Few Useful Things to Know About Machine Learning</a> is another article that I found insightful about the use of data in algorithms and the desired goal of the Data Scientist or Modeler.</p>
+<p>So if you didn’t know - it’s the data, stupid! Stay close to the data because she’s your friend. The entire interview can be heard/watched <a href="https://youtu.be/yzMVEbs8Zz0">here</a>. <a href="https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf">A Few Useful Things to Know About Machine Learning</a> is another article that I found insightful about the use of data in algorithms and the desired goal of the Data Scientist or Modeler.</p>
 <div id="why-is-industry-different-part-1" class="section level2">
 <h2>Why is Industry Different (Part 1)?</h2>
-<p>In industry, the data is messy. In academics, not as much. Academic programs at both the Undergraduate and (some) Graduate levels ignore the Exploratory Data Analysis (EDA) aspect of model development.</p>
+<p>In industry, the data is messy. In academics, not as much. Academic programs at both the undergraduate and (some) graduate levels ignore the Exploratory Data Analysis (EDA) aspect of model development.</p>
 <p>In my experience, emphasis is not on the deployment of an advance method or model. As Charles Isbell has said, “the data is almost more important than the algorithm”.</p>
 <p>So I’d like to go deeper. Below is the distribution of Shop Times for single-item orders.</p>
 <p><img src="images/shop_times_dist0.png" width="80%" style="display: block; margin: auto;" /></p>
@@ -783,9 +783,9 @@
 <li>A very long right tail</li>
 </ul>
 <p>I hope that exercise shows the limited nature of seeing data only through the lens of the numbers on a table or graph.</p>
-<p>The actual task of shopping an order cannot be understood merely by staring at a graph and hypothesizing about shopper behavior. At Shipt, I am a shopper. This business is about people, not machine learning models. So I physically did the work. I went into the field as an ‘undercover’ Shipt Shopper. 😉</p>
+<p>The actual task of shopping an order cannot be understood merely by staring at a graph and hypothesizing about shopper behavior. At Shipt, I am also a shopper. This business is about people, not machine learning models. So I physically did the work. I went into the field as an ‘undercover’ Shipt Shopper. 😉</p>
 <p><img src="images/venchei_shopper.jpg" width="40%" style="display: block; margin: auto;" /></p>
-<p>Giving students curated datasets, dismisses how the game is played in reality and leaves a hole in the students fundamental training. Sometimes you gotta go into the field and actually do some heavy lifting (or shopping).</p>
+<p>Giving students curated datasets dismisses how the game is played in reality and leaves a hole in the students’ fundamental training. Sometimes you gotta go into the field and actually do some heavy lifting (or shopping).</p>
 <p>So I open the Shipt Shopper app and see an order such as the following:</p>
 <div class="figure" style="text-align: center"><span id="fig:offercard"></span>
 <img src="images/order_offer_og.jpg" alt="OG-Order Offer Card" width="40%" />
@@ -793,13 +793,13 @@
 Figure 1: OG-Order Offer Card
 </p>
 </div>
-<p>Since I want the experience of working as a professional Shipt Shopper, I skate to Foods Co. and shop a couple orders together. I believe (more seasoned) shoppers refer to these as doubles. This was a rookie mistake.</p>
-<p>You see while shopping in Alabama, I had a car. I’ve since relocated to my companies’ San Francisco office and currently commute via electric skateboard and transportation such as BART or rideshare (LYFT/UBER).</p>
+<p>Since I want the experience of working as a professional Shipt Shopper, I skate to Foods Co. and shop a couple orders together. I believe (more seasoned) shoppers refer to these as ‘doubles’. This was a rookie mistake.</p>
+<p>You see while shopping in Alabama, I had a car. I’ve since relocated to my companies’ San Francisco office and currently commute via electric skateboard and public transportation such as BART or rideshare (LYFT/UBER).</p>
 <p>Shopping a ‘double’ resulted in the following at checkout:</p>
 <p><img src="images/cart.jpg" width="40%" style="display: block; margin: auto;" /></p>
 <p><img src="images/cashier.jpg" width="40%" style="display: block; margin: auto;" /></p>
 <p>That experience led to some internal discussions about ‘uncovering’ order metadata such as its contents.</p>
-<p>In image below you see two twelve-packs of Crush orange soda and two six-packs of Sunny D. This order was very heavy.</p>
+<p>In the image below you see two twelve-packs of Crush orange soda and two six-packs of Sunny D. This order was very heavy.</p>
 <p><img src="images/backpack.jpg" width="40%" style="display: block; margin: auto;" /></p>
 <p>Innovations by the Shipt Product team led to the modern version of the Offer Card where shoppers can now see the underlying order contents via the List Preview.</p>
 <div class="figure" style="text-align: center"><span id="fig:offercard7"></span>
@@ -814,7 +814,7 @@ Figure 2: Order Offer Card
 Figure 3: List Preview
 </p>
 </div>
-<p>You see the model development process (in Industry) <strong><em>does not</em></strong> start with:</p>
+<p>You see the model development process (in industry) <strong><em>does not</em></strong> consist of:</p>
 <ol style="list-style-type: decimal">
 <li>Read about a cutting edge algorithm.</li>
 <li>Find some data at work.</li>
@@ -822,31 +822,33 @@ Figure 3: List Preview
 <li>Business makes a lot of money and you get rich.</li>
 <li>Repeat.</li>
 </ol>
-<p>The model development process (in industry) starts with:</p>
+<p>The model development process (in industry) consist of:</p>
 <ol style="list-style-type: decimal">
-<li>The business problem. What problem are you trying to solve?</li>
-<li>The data. Do you have the data needed to solve the problem? Do I need to create an ETL pipeline for the data?</li>
-<li>Data Cleaning and Mining. Not all data is good data. Choose wisely!</li>
-<li>Data Cleaning and Mining. Exploration with charts and graphs is always a winner but conduct some field research.</li>
-<li>Set the baseline with a simple linear model or benchmark.</li>
-<li>Perform Feature Engineering.</li>
-<li>Repeat steps 4-6 until you find best performing model versus your benchmark heuristic.</li>
-<li>Deployment. Get it into production.</li>
-<li>Look for model drift and decay over time. Anomaly Detection is useful for this.</li>
+<li><p>The Business Problem: <em>What problem are you trying to solve?</em></p></li>
+<li><p>The Data: <em>Do you have the data needed to solve the problem? Do you need to create an ETL pipeline for the data?</em></p></li>
+<li><p>Data Cleaning and Mining: <em>Not all data is good data. Choose wisely!</em></p>
+<ul>
+<li><em>Exploration with charts and graphs is always a winner but conduct some field research.</em></li>
+</ul></li>
+<li><p>Baseline: <em>Set the baseline with a simple linear model, benchmark or heuristic.</em></p></li>
+<li><p>Feature Engineering: <em>Feature Engineering is domain specific. So know your business and your customer.</em></p></li>
+<li><p>Repeat: <em>Iterate and repeat steps 4-6 until you find the best performing model versus your benchmark or heuristic. </em></p></li>
+<li><p>Deployment: <em>Get it into production.</em></p></li>
+<li><p>Anomaly Detection: <em>Model’s decay and drift over time. Automate the detection of anomalies becuase they will happen.</em></p></li>
 </ol>
-<p>Again, this business is about people and solving problems for them, not machine learning models. To actually understand the problem, I went in to the Shopper App and delivered orders for members. I then leveraged that research and those experiences to help me get to know the data, it’s strengths and weaknesses.</p>
+<p>Again, this business is about people and solving problems for them, not machine learning models. To actually understand the problem, I went into the Shopper App and delivered orders for members. I then leveraged that research and those experiences to help me get to know the data, its strengths and weaknesses.</p>
 </div>
 <div id="what-about-model-performance" class="section level2">
 <h2>What About Model Performance?</h2>
-<p>How well should a model perform? As my Econometrics Professor Matt Holt would say, “Depends on your Employer”. If we trained our model on data including possible outliers (on the left end of the distribution) then the model will perform poorly. Suppose you run a bank, under predicting the model’s target (Shop Times for Shipt) could lead to financial ruin.</p>
-<p>A Bank may have to use a model to determine capital exposure under Black Swan market events -this type of testing is known as <a href="https://www.federalreserve.gov/supervisionreg/stress-tests-capital-planning.htm">CCAR</a> and is a part of <a href="https://www.federalreserve.gov/supervisionreg/dfa-stress-tests.htm">DFAST</a>. When modeling, generalization and representation matters. Stay close to the data and remember, “the data is almost more important than the algorithm.” A clever or fancy algorithm can lose or perform equally to a simpler model with superior data.</p>
-<p>I really want to drive home and nail this point; so here’s another example. Suppose you’re preparing to run a race or play a basketball game. As the coach, do you want athlete that has trained for the event with ten so-so practices or an athlete with 1000 days of varying forms of practice (shooting three pointers, free throws, layups, etc); The data matters <strong><em>PERIOD</em></strong>.</p>
+<p>How well should a model perform? As my Econometrics Professor Matt Holt would say, “Depends on your Employer”. If we trained our model on data including possible outliers (on the left end of the distribution) then the model will perform poorly. Suppose you run a bank, under-predicting the model’s target (Shop Times for Shipt) could lead to financial ruin.</p>
+<p>Suppose you’re preparing to run a race or play a basketball game. As the coach, do you want the athlete that has trained for the event with ten smediocre practices or an athlete with 1000 days of varying forms of practice (shooting three pointers, free throws, layups, etc); The data matters <strong><em>PERIOD</em></strong>.</p>
+<p>When modeling, generalization and representation matters. Stay close to the data and remember, “the data is almost more important than the algorithm.” A clever or fancy algorithm can lose or perform equally to a simpler model with superior data.</p>
 <p>With that out of the way, let’s get back to the article…</p>
 </div>
 <div id="how-long-does-it-take-to-find-one-item-in-a-grocery-store" class="section level2">
 <h2>How long does it take to find one item in a grocery store?</h2>
-<p>Go ahead and take a guess, I’ll wait… What did you guess - ten, fifteen minutes? When conducting personal shopping such a thought may come to mind while under a time crunch. So it’s lunch time and you only have 40 minutes to run into the grocery store to grab dinner and snacks before you have to pick up the kids. So how long does it take to find one item in a grocery store? Is that item in the front or rear of the store? Do you need help from a store associate while searching for that one item?</p>
-<p>I too wrestled with this question. While working as an analyst for Shipt -a grocery delivery company, I leverage common notions in both geometry and physics to determine which data are useful for a machine learning project that estimates what we call <strong><em>“Shop Time”</em></strong>.</p>
+<p>Go ahead and take a guess, I’ll wait… What did you guess - ten, fifteen minutes? When conducting personal shopping such a thought may come to mind while under a time crunch. What if it’s lunch time and you only have 40 minutes to run into the grocery store to grab dinner and snacks before you have to pick up the kids from day care. So how long does it take to find one item in a grocery store? Is that item in the front or rear of the store? Do you need help from a store associate while searching for that one item?</p>
+<p>I too wrestled with this question. While working as an analyst for Shipt, I leverage common notions in both geometry and physics to determine which data are useful for a machine learning project that estimates what we call <strong><em>“Shop Time”</em></strong>.</p>
 </div>
 <div id="what-is-shop-time" class="section level2">
 <h2>What is Shop Time?</h2>
@@ -862,15 +864,15 @@ Figure 4: Order Offer Card
 </div>
 <div id="identifying-outliers" class="section level2">
 <h2>Identifying Outliers</h2>
-<p>If we choose data that was poorly captured then model predictions will result in a false signal and wildly varying shop time expectations for our shoppers. Here in lies the tricky part of the problem, the <a href="https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229">Bias-Variance Trade-Off</a>. Removing too much data decreases our Bias but increases our Variance (aka over-fitting to the training examples).</p>
+<p>If we choose data that was poorly captured then model predictions will result in a false signal and wildly varying shop time expectations for our shoppers. Therein lies the tricky part of the problem, the <a href="https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229">Bias-Variance Trade-Off</a>. Removing too much data decreases our Bias but increases our Variance (aka over-fitting to the training examples).</p>
 </div>
 <div id="why-is-industry-different-part-2" class="section level2">
 <h2>Why is Industry Different (Part 2)?</h2>
-<p>In hindsight, while studying economics as a graduate student, this idea was not well articulated Outliers and bad data can destroy model performance In academics, data sets are generally cleaned such that students can quickly get up to speed on the methods and algorithms but more time should be devoted to Exploratory Data Analysis (EDA) and proper Outlier identification and Removal.</p>
-<p>The <a href="https://towardsdatascience.com/predicting-vs-explaining-69b516f90796">explain vs predict</a> paradigm has lead to this dynamic. Economists love to explain relationships and thus seek an optimal fit that can best explain market behavior; an Economists might argue, “It’s all just statistics”. In return, the ML modeler might argue if the goal is accurate predictions then the explanation is not a relevant going-concern; thus, they demand generalization.</p>
-<p>It is true, a proper model must generalize well to new data. In this case we started the data selection process by determining reasonable lower bounds for Shop Time. Additional resources/literature on this topic can be found by reading <a href="https://www.datascienceblog.net/post/commentary/inference-vs-prediction/">Inference vs Prediction</a> or <a href="https://hdsr.mitpress.mit.edu/pub/a7gxkn0a/release/6">A Balanced Perspective on Prediction and Inference for Data Science in Industry</a>.</p>
+<p>In hindsight, while studying economics as a graduate student, this idea was not well articulated. Outliers and bad data can destroy model performance In academics, data sets are generally cleaned such that students can quickly get up to speed on the methods and algorithms but more time should be devoted to Exploratory Data Analysis (EDA) and proper Outlier identification and Removal.</p>
+<p>The <a href="https://towardsdatascience.com/predicting-vs-explaining-69b516f90796">explain vs predict</a> paradigm has lead to this dynamic. Economists love to explain relationships and thus seek an optimal fit that can best explain market behavior; an economist might argue, “It’s all just statistics.” In return, the ML modeler might argue that if the goal is accurate predictions then the explanation is not a relevant concern; thus, they demand generalization.</p>
+<p>It is true, a proper model must generalize well to new data. In this case, we started the data selection process by determining reasonable lower bounds for Shop Time. Additional resources/literature on this topic can be found by reading <a href="https://www.datascienceblog.net/post/commentary/inference-vs-prediction/">Inference vs Prediction</a> or <a href="https://hdsr.mitpress.mit.edu/pub/a7gxkn0a/release/6">A Balanced Perspective on Prediction and Inference for Data Science in Industry</a>.</p>
 <p>Let’s get back to the article….</p>
-<p>In physics, there’s and well known mental model called <a href="https://fs.blog/2018/04/first-principles/">First Principles Reasoning</a>. Thinking via First Principles allows a person to start from scratch while questioning every known assumption about a specific domain, then building a new (hopefully innovative) solution based upon new thinking about those assumptions.</p>
+<p>In physics, there’s a well known mental model called <a href="https://fs.blog/2018/04/first-principles/">First Principles Reasoning</a>. Thinking via First Principles allows a person to start from scratch while questioning every known assumption about a specific domain, then building a new (hopefully innovative) solution based upon new thinking about those assumptions.</p>
 <p>A strong analyst should have many tools in the toolbox, reasoning by First Principles is one such tool. After thinking deeply about a reasonable floor, one should consider the most basic order type, an order (smallest possible) with <strong><em>only</em></strong> one item. We’ll call the associated shop time for a single-item order the <strong><strong>Minimum Shop Time</strong></strong>.</p>
 <p>So how long does it take to find one item in a grocery store? If you guessed 10 minutes, then I need you to explain why. As my friend Maliha would say, “In God we trust. All others must provide data.” This the art of Data Science.</p>
 <p>In order to create a model that has high value impact for a business, a modeler should start by framing the problem in the most basic form, build an understanding of the limitations of the data and then find the balance between signal and noise (or Bias and Variance) for your target.</p>
@@ -885,12 +887,12 @@ Figure 5: We see hundreds of zero or negative shop times captured by our databas
 </div>
 </div>
 <div id="grocery-shopping-axioms-and-theory" class="section level2">
-<h2>Grocery Shopping Axioms and Theory?</h2>
-<p>If you studied mathematics, you have probably heard of <a href="https://en.wikipedia.org/wiki/Euclid%27s_Elements">Euclid’s Elements</a>. Euclid’s Elements is a set books attributed to Euclid of Alexandria, around 300 BC. During that time, Euclid’s Elements were considered a bible of sorts for mathematics. His theories on <a href="https://en.wikipedia.org/wiki/Number_theory">Number Theory</a> and <a href="https://en.wikipedia.org/wiki/Geometry">Geometry</a> are considered fundamental to a proper mathematics education. Moreover in mathematics, understood truths are called Axioms and Postulates. Here we present our Elements (Axioms and Postulates) for Grocery Shopping:</p>
+<h2>Grocery Shopping Axioms and Theory</h2>
+<p>If you studied mathematics, you have probably heard of <a href="https://en.wikipedia.org/wiki/Euclid%27s_Elements">Euclid’s Elements</a>. Euclid’s Elements is a set of books attributed to Euclid of Alexandria, around 300 BC. During that time, Euclid’s Elements were considered a bible of sorts for mathematics. His theories on <a href="https://en.wikipedia.org/wiki/Number_theory">Number Theory</a> and <a href="https://en.wikipedia.org/wiki/Geometry">Geometry</a> are considered fundamental to a proper mathematics education. Moreover in mathematics, understood truths are called Axioms and Postulates. Here we present our Elements (Axioms and Postulates) for Grocery Shopping:</p>
 <ol style="list-style-type: decimal">
 <li><p>An order for delivery has a minimum of one product and one item (Shipt refers to this as an order line - similar to a line item on a receipt)</p></li>
-<li><p>Shop Times are positive, all real numbers, <span class="math inline">\({\rm I\!R} ^ {+}\)</span></p></li>
-<li><p>As number of products and total items requested increase, so does the duration of time to shop</p></li>
+<li><p>Shop Times are positive, real numbers, <span class="math inline">\({\rm I\!R} ^ {+}\)</span></p></li>
+<li><p>As number of products and total items requested increases, so does the duration of time to shop</p></li>
 </ol>
 <p><strong>Note</strong>: This article attempts to narrow the focus of number two; meaning we’re really interested in understanding which data to value for training examples. For additional reading on the Data Valuation and Quality, read some on <a href="https://arxiv.org/pdf/1904.02868.pdf">Data Shapley</a>.</p>
 <p>We have data about the area (or size) of stores that we service. Moreover, we can leverage that information along with member feedback to develop a model that reasonably estimates the time it takes to shop a single-item order.</p>
@@ -905,8 +907,8 @@ Figure 5: We see hundreds of zero or negative shop times captured by our databas
 </div>
 <div id="why-is-industry-different-part-3" class="section level2">
 <h2>Why is Industry Different (Part 3)?</h2>
-<p>I think the dynamics of real world liability is something that is a miss in academic programs; meaning - what is at risk? In predicting shop times, we’d prefer to over-predict than under-predict. If you drive an autonomous vehicle would you prefer the system over-predict stop prematurely or under-predict and stop too late.</p>
-<p>If designing an ABS system that uses computer vision to calculate crash probabilities mid-drive, you’d prefer the system stop early, a false positive, than late or not at all. These dynamics take the problem from ‘fun exercise’ to</p>
+<p>I think the dynamics of real world liability is something that is a miss in academic programs; meaning - what is at risk? In predicting shop times, we’d prefer to over-predict than under-predict. If you drive an autonomous vehicle, would you prefer the system over-predict, have a false positive and stop prematurely or under-predict, have a false negative and stop too late?</p>
+<p>If designing an ABS system that uses computer vision to calculate crash probabilities mid-drive, you’d prefer the system stop early, a false positive, than late or not at all. These dynamics take the problem from ‘fun exercise’ to:</p>
 <div style="width:100%;height:0;padding-bottom:56%;position:relative;">
 <iframe src="https://giphy.com/embed/3010TVhWwXy2N9OUGQ" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy">
 </iframe>
@@ -950,7 +952,7 @@ Figure 5: We see hundreds of zero or negative shop times captured by our databas
 <p>A human <a href="https://en.wikipedia.org/wiki/Walking#:~:text=Although%20walking%20speeds%20can%20vary,miles%20per%20hour%20(mph)">walks</a> at roughly 3.1 Miles per Hour. After converting to feet per minute, we get 272.8 feet per minute.</p>
 </div>
 <div id="so-whats-your-point" class="section level2">
-<h2>So what’s your point?…</h2>
+<h2>…So what’s your point?…</h2>
 <p>Since we know the distance to the rear of the store and our walking pace, we now have a way to determine if our time to shop guess was reasonable.</p>
 <p>We can now flag Shop Times in our data that are below the computed Minimum Shop Time threshold.</p>
 <p><span class="math display">\[
@@ -959,20 +961,20 @@ Figure 5: We see hundreds of zero or negative shop times captured by our databas
 </div>
 <div id="why-is-industry-different-part-4" class="section level2">
 <h2>Why is Industry Different (Part 4)?</h2>
-<p>This is a simple ‘model’ filled with unrealistic expectations, right? That’s not the point of this discussion. Remember from earlier - It’s the Data Stupid! A simple model with superior data can outperform a more clever model with noise.</p>
-<p>In graduate Econometrics courses we learn about parsimonious and our preference is to simpler, highly performant models. However, those models are only performant if the data is properly optimized for the correct signal. Finding that optimal signal is both an art (specific to the the domain) and a science (the computational and quantitative methods) used to find signal.</p>
+<p>This is a simple ‘model’ filled with unrealistic expectations, right? That’s not the point of this discussion. Might - It’s the data, stupid! A simple model with superior data can outperform a more clever model with noise.</p>
+<p>In graduate Econometrics courses we learn about parsimony and our preference for simpler, highly performant models. However, those models are only performant if the data is properly optimized for the correct signal. Finding that optimal signal is both an art (specific to the domain) and a science (the computational and quantitative methods) used to find signal.</p>
 <p>Getting ML training with clean data is lovely but the art of machine learning is understanding your domain and engineering solutions that a databot can not. This requires strong analytics and possibly going into the field and physically doing the work.</p>
 </div>
 <div id="frameworkmodel-assumptions-and-limitations" class="section level2">
 <h2>Framework/Model Assumptions and Limitations</h2>
-<p>Our model is not perfect. It makes assumptions about a shoppers ability to walk, locate an item and checkout. These assumptions are as follows:</p>
+<p>Our model is not perfect. It makes assumptions about a shopper’s ability to walk, locate an item and checkout. These assumptions are as follows:</p>
 <ol style="list-style-type: decimal">
 <li><p>Our model assumes the worst possible case for an item’s location — an item is located in the rear corner of the store opposite the shopper’s entrance.</p></li>
 <li><p>The shortest possible path to the rear of the store can be traversed via the diagonal; a shopper’s ability to enter the store and walk to the rear via the diagonal (a straight line) represents the optimal path to the rear of the store.</p></li>
 <li><p>We assume there are minimal impediments to the shoppers ability to walk at the average speed (walking pace of human is assumed).</p></li>
 <li><p>Finally, we assume a shopper can locate an item that is stocked, pay the cashier, and walk out of the store unencumbered; meaning, at this point we are leveraging this model to gain insight about shop time.</p></li>
 </ol>
-<p>Despite violating the physical properties of a store (i.e., a shopper cannot walk through the aisles of a store via the diagonal), this model provides an insight into reasonable Shop Time expectations for a shopper whom is fulfilling a single-item order. For all larger orders, we expect larger Shop Times (Axiom 3); thus, Shop Times recorded below the threshold for all order sizes will be marked as potential outliers.</p>
+<p>Despite violating the physical properties of a store (i.e., a shopper cannot walk through the aisles of a store via the diagonal), this model provides an insight into reasonable Shop Time expectations for a shopper who is fulfilling a single-item order. For all larger orders, we expect larger Shop Times (Axiom 3); thus, Shop Times recorded below the threshold for all order sizes will be marked as potential outliers.</p>
 </div>
 <div id="closing-thoughts-and-reflections" class="section level2">
 <h2>Closing Thoughts and Reflections</h2>
@@ -985,8 +987,8 @@ Figure 5: We see hundreds of zero or negative shop times captured by our databas
 <p><span class="math display">\[
   \mbox{Target (full-size format) Minimum Shop Time} \approx \frac{\sqrt{\mbox{260,000}}}{136.4 \frac{feet}{minute}} \approx \mbox{4 (or 3.78) minutes}
 \]</span></p>
-<p>We can now remove all data below these computed thresholds. Amazing how a simple model can have profound impact one’s thinking.</p>
-<p>And never say you’ll be back in a minute!</p>
+<p>We can now remove all data below these computed thresholds. Amazing how a simple model can have profound impact on one’s thinking.</p>
+<p>Never say you’ll be back in a minute!</p>
 <p>Please feel free to leave a comment below and thanks for checking out Da Venchei Codes. 😄</p>
 <p>-V</p>
 </div>
