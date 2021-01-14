@@ -46,8 +46,12 @@
 &lt;/ul&gt;
 &lt;p&gt;I hope that exercise shows the limited nature of seeing data only through the lens of the numbers on a table or graph.&lt;/p&gt;
 &lt;p&gt;The actual task of shopping an order cannot be understood merely by staring at a graph and hypothesizing about shopper behavior. At Shipt, I am also a shopper. This business is about people, not machine learning models. So I physically did the work.&lt;/p&gt;
-&lt;p&gt;I went into the field as an ‘undercover’ Shipt Shopper. 😉&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;images/venchei_shopper.jpg&#34; width=&#34;40%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;img src=&#34;images/venchei_shopper.jpg&#34; alt=&#34;Venchei Shipt Shopper&#34; width=&#34;40%&#34; height=&#34;100%&#34;/&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+I went into the field as an ‘undercover’ Shipt Shopper. 😉
+&lt;/figcaption&gt;
+&lt;/figure&gt;
 &lt;p&gt;Giving students curated datasets dismisses how the game is played in reality and leaves a hole in the students’ fundamental training. Sometimes you gotta go into the field and actually do some heavy lifting (or shopping).&lt;/p&gt;
 &lt;p&gt;So I open the Shipt Shopper app and see an order such as the following:&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:offercard&#34;&gt;&lt;/span&gt;
