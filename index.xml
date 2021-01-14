@@ -85,11 +85,11 @@
 &lt;p&gt;&lt;a href=&#34;https://shipt.tech/shop-time-and-the-area-of-a-square-dcc9cb055368&#34;&gt;Shop Time and the Area of a Square&lt;/a&gt; is an article written on July 20th, 2020 for my current employer, a grocery delivery company called Shipt, to articulate how we leveraged data analytics to understand the minimum shop time for finding one item at a retailer. Upon further review, that process has taught me a lot about developing machine learning models in industry. So I’d like to revisit the article with some additional commentary and insights on how Analytics drive ML Model Development (in industry).&lt;/p&gt;
 &lt;p&gt;From time to time, I enjoy listening to the Lex Fridman Podcast and recently I heard him interviewing Charles Isbell and Michael Littman; for anyone attempting to enter the space and deploy a machine learning model, the clip below is the ML gospel; I hope you enjoy it. 😄&lt;/p&gt;
 &lt;p&gt;An astute modeler should know that a clever or fancy algorithm can lose or perform equally to a simpler model with superior data.&lt;/p&gt;
-
+&lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/8wVXyT7gKxI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
+&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;So if you didn’t know - it’s the data, stupid! Stay close to the data because she’s your friend. The entire interview can be heard/watched &lt;a href=&#34;https://youtu.be/yzMVEbs8Zz0&#34;&gt;here&lt;/a&gt;. &lt;a href=&#34;https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf&#34;&gt;A Few Useful Things to Know About Machine Learning&lt;/a&gt; is another article that I found insightful about the use of data in algorithms and the desired goal of the Data Scientist or Modeler.&lt;/p&gt;
 &lt;div id=&#34;why-is-industry-different-part-1&#34; class=&#34;section level2&#34;&gt;
@@ -107,7 +107,8 @@
 &lt;li&gt;A very long right tail&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I hope that exercise shows the limited nature of seeing data only through the lens of the numbers on a table or graph.&lt;/p&gt;
-&lt;p&gt;The actual task of shopping an order cannot be understood merely by staring at a graph and hypothesizing about shopper behavior. At Shipt, I am also a shopper. This business is about people, not machine learning models. So I physically did the work. I went into the field as an ‘undercover’ Shipt Shopper. 😉&lt;/p&gt;
+&lt;p&gt;The actual task of shopping an order cannot be understood merely by staring at a graph and hypothesizing about shopper behavior. At Shipt, I am also a shopper. This business is about people, not machine learning models. So I physically did the work.&lt;/p&gt;
+&lt;p&gt;I went into the field as an ‘undercover’ Shipt Shopper. 😉&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;images/venchei_shopper.jpg&#34; width=&#34;40%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Giving students curated datasets dismisses how the game is played in reality and leaves a hole in the students’ fundamental training. Sometimes you gotta go into the field and actually do some heavy lifting (or shopping).&lt;/p&gt;
 &lt;p&gt;So I open the Shipt Shopper app and see an order such as the following:&lt;/p&gt;
@@ -120,23 +121,45 @@ Figure 1: OG - Order Offer Card
 &lt;p&gt;Since I want the experience of working as a professional Shipt Shopper, I skate to Foods Co. and shop a couple orders together. I believe (more seasoned) shoppers refer to these as ‘doubles’. This was a rookie mistake.&lt;/p&gt;
 &lt;p&gt;You see while shopping in Alabama, I had a car. I’ve since relocated to my companies’ San Francisco office and currently commute via electric skateboard and public transportation such as BART or rideshare (LYFT/UBER).&lt;/p&gt;
 &lt;p&gt;Shopping a ‘double’ resulted in the following at checkout:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;images/cart.jpg&#34; width=&#34;40%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;images/cashier.jpg&#34; width=&#34;40%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;row&#34;&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;img src=&#34;images/cart.jpg&#34; alt=&#34;Grocery Cart&#34; width=&#34;55%&#34; height=&#34;100%&#34;/&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+A Full Cart! 😓
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;img src=&#34;images/cashier.jpg&#34; alt=&#34;Checking Out&#34; width=&#34;100%&#34; height=&#34;100%&#34;/&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+At Checkout
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;p&gt;That experience led to some internal discussions about ‘uncovering’ order metadata such as its contents.&lt;/p&gt;
 &lt;p&gt;In the image below you see two twelve-packs of Crush orange soda and two six-packs of Sunny D. This order was very heavy.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;images/backpack.jpg&#34; width=&#34;40%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Innovations by the Shipt Product team led to the modern version of the Offer Card where shoppers can now see the underlying order contents via the List Preview.&lt;/p&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:offercard7&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;images/offer_card.jpeg&#34; alt=&#34;NG - Order Offer Card&#34; width=&#34;60%&#34; height=&#34;20%&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 2: NG - Order Offer Card
-&lt;/p&gt;
+&lt;div class=&#34;row&#34;&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;img src=&#34;images/offer_card.jpeg&#34; alt=&#34;Shopper Offer Card&#34; width=&#34;100%&#34; height=&#34;100%&#34;/&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+Shopper Order Offer Card
+&lt;/figcaption&gt;
+&lt;/figure&gt;
 &lt;/div&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:offercard8&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;images/preview.jpeg&#34; alt=&#34;List Preview&#34; width=&#34;30%&#34; height=&#34;20%&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 3: List Preview
-&lt;/p&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;img src=&#34;images/preview.jpeg&#34; alt=&#34;List Preview&#34; width=&#34;35%&#34; height=&#34;100%&#34;/&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+Order List Preview
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;You see the model development process (in industry) &lt;strong&gt;&lt;em&gt;does not&lt;/em&gt;&lt;/strong&gt; consist of:&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
@@ -182,7 +205,7 @@ Figure 3: List Preview
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:offercard20&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;images/offer_card.jpeg&#34; alt=&#34;Order Offer Card&#34; width=&#34;60%&#34; height=&#34;20%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
-Figure 4: Order Offer Card
+Figure 2: Order Offer Card
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -206,7 +229,7 @@ Figure 4: Order Offer Card
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:offercard10&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;images/shop_times_dist1.png&#34; alt=&#34;Our database captured hundreds of zero or negative shop times.&#34; width=&#34;70%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
-Figure 5: Our database captured hundreds of zero or negative shop times.
+Figure 3: Our database captured hundreds of zero or negative shop times.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -304,7 +327,9 @@ Figure 5: Our database captured hundreds of zero or negative shop times.
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
   \mbox{Target (small-size format) Minimum Shop Time} \approx \frac{\sqrt{\mbox{80,000}}}{136.4 \frac{feet}{minute}} \approx \mbox{2 (or 2.09) minutes}
 \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;or&lt;/p&gt;
+&lt;center&gt;
+or
+&lt;/center&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
   \mbox{Target (full-size format) Minimum Shop Time} \approx \frac{\sqrt{\mbox{260,000}}}{136.4 \frac{feet}{minute}} \approx \mbox{4 (or 3.78) minutes}
 \]&lt;/span&gt;&lt;/p&gt;

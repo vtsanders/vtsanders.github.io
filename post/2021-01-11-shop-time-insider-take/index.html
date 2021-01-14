@@ -761,11 +761,11 @@
 <p><a href="https://shipt.tech/shop-time-and-the-area-of-a-square-dcc9cb055368">Shop Time and the Area of a Square</a> is an article written on July 20th, 2020 for my current employer, a grocery delivery company called Shipt, to articulate how we leveraged data analytics to understand the minimum shop time for finding one item at a retailer. Upon further review, that process has taught me a lot about developing machine learning models in industry. So I’d like to revisit the article with some additional commentary and insights on how Analytics drive ML Model Development (in industry).</p>
 <p>From time to time, I enjoy listening to the Lex Fridman Podcast and recently I heard him interviewing Charles Isbell and Michael Littman; for anyone attempting to enter the space and deploy a machine learning model, the clip below is the ML gospel; I hope you enjoy it. 😄</p>
 <p>An astute modeler should know that a clever or fancy algorithm can lose or perform equally to a simpler model with superior data.</p>
-
+<p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/8wVXyT7gKxI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-
+</p>
 <p><br></p>
 <p>So if you didn’t know - it’s the data, stupid! Stay close to the data because she’s your friend. The entire interview can be heard/watched <a href="https://youtu.be/yzMVEbs8Zz0">here</a>. <a href="https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf">A Few Useful Things to Know About Machine Learning</a> is another article that I found insightful about the use of data in algorithms and the desired goal of the Data Scientist or Modeler.</p>
 <div id="why-is-industry-different-part-1" class="section level2">
@@ -783,7 +783,8 @@
 <li>A very long right tail</li>
 </ul>
 <p>I hope that exercise shows the limited nature of seeing data only through the lens of the numbers on a table or graph.</p>
-<p>The actual task of shopping an order cannot be understood merely by staring at a graph and hypothesizing about shopper behavior. At Shipt, I am also a shopper. This business is about people, not machine learning models. So I physically did the work. I went into the field as an ‘undercover’ Shipt Shopper. 😉</p>
+<p>The actual task of shopping an order cannot be understood merely by staring at a graph and hypothesizing about shopper behavior. At Shipt, I am also a shopper. This business is about people, not machine learning models. So I physically did the work.</p>
+<p>I went into the field as an ‘undercover’ Shipt Shopper. 😉</p>
 <p><img src="images/venchei_shopper.jpg" width="40%" style="display: block; margin: auto;" /></p>
 <p>Giving students curated datasets dismisses how the game is played in reality and leaves a hole in the students’ fundamental training. Sometimes you gotta go into the field and actually do some heavy lifting (or shopping).</p>
 <p>So I open the Shipt Shopper app and see an order such as the following:</p>
@@ -796,23 +797,45 @@ Figure 1: OG - Order Offer Card
 <p>Since I want the experience of working as a professional Shipt Shopper, I skate to Foods Co. and shop a couple orders together. I believe (more seasoned) shoppers refer to these as ‘doubles’. This was a rookie mistake.</p>
 <p>You see while shopping in Alabama, I had a car. I’ve since relocated to my companies’ San Francisco office and currently commute via electric skateboard and public transportation such as BART or rideshare (LYFT/UBER).</p>
 <p>Shopping a ‘double’ resulted in the following at checkout:</p>
-<p><img src="images/cart.jpg" width="40%" style="display: block; margin: auto;" /></p>
-<p><img src="images/cashier.jpg" width="40%" style="display: block; margin: auto;" /></p>
+<div class="row">
+<div class="col-md-6">
+<figure>
+<p><img src="images/cart.jpg" alt="Grocery Cart" width="55%" height="100%"/></p>
+<figcaption>
+A Full Cart! 😓
+</figcaption>
+</figure>
+</div>
+<div class="col-md-6">
+<figure>
+<p><img src="images/cashier.jpg" alt="Checking Out" width="100%" height="100%"/></p>
+<figcaption>
+At Checkout
+</figcaption>
+</figure>
+</div>
+</div>
 <p>That experience led to some internal discussions about ‘uncovering’ order metadata such as its contents.</p>
 <p>In the image below you see two twelve-packs of Crush orange soda and two six-packs of Sunny D. This order was very heavy.</p>
 <p><img src="images/backpack.jpg" width="40%" style="display: block; margin: auto;" /></p>
 <p>Innovations by the Shipt Product team led to the modern version of the Offer Card where shoppers can now see the underlying order contents via the List Preview.</p>
-<div class="figure" style="text-align: center"><span id="fig:offercard7"></span>
-<img src="images/offer_card.jpeg" alt="NG - Order Offer Card" width="60%" height="20%" />
-<p class="caption">
-Figure 2: NG - Order Offer Card
-</p>
+<div class="row">
+<div class="col-md-6">
+<figure>
+<p><img src="images/offer_card.jpeg" alt="Shopper Offer Card" width="100%" height="100%"/></p>
+<figcaption>
+Shopper Order Offer Card
+</figcaption>
+</figure>
 </div>
-<div class="figure" style="text-align: center"><span id="fig:offercard8"></span>
-<img src="images/preview.jpeg" alt="List Preview" width="30%" height="20%" />
-<p class="caption">
-Figure 3: List Preview
-</p>
+<div class="col-md-6">
+<figure>
+<p><img src="images/preview.jpeg" alt="List Preview" width="35%" height="100%"/></p>
+<figcaption>
+Order List Preview
+</figcaption>
+</figure>
+</div>
 </div>
 <p>You see the model development process (in industry) <strong><em>does not</em></strong> consist of:</p>
 <ol style="list-style-type: decimal">
@@ -858,7 +881,7 @@ Figure 3: List Preview
 <div class="figure" style="text-align: center"><span id="fig:offercard20"></span>
 <img src="images/offer_card.jpeg" alt="Order Offer Card" width="60%" height="20%" />
 <p class="caption">
-Figure 4: Order Offer Card
+Figure 2: Order Offer Card
 </p>
 </div>
 </div>
@@ -882,7 +905,7 @@ Figure 4: Order Offer Card
 <div class="figure" style="text-align: center"><span id="fig:offercard10"></span>
 <img src="images/shop_times_dist1.png" alt="Our database captured hundreds of zero or negative shop times." width="70%" />
 <p class="caption">
-Figure 5: Our database captured hundreds of zero or negative shop times.
+Figure 3: Our database captured hundreds of zero or negative shop times.
 </p>
 </div>
 </div>
@@ -980,7 +1003,9 @@ Figure 5: Our database captured hundreds of zero or negative shop times.
 <p><span class="math display">\[
   \mbox{Target (small-size format) Minimum Shop Time} \approx \frac{\sqrt{\mbox{80,000}}}{136.4 \frac{feet}{minute}} \approx \mbox{2 (or 2.09) minutes}
 \]</span></p>
-<p>or</p>
+<center>
+or
+</center>
 <p><span class="math display">\[
   \mbox{Target (full-size format) Minimum Shop Time} \approx \frac{\sqrt{\mbox{260,000}}}{136.4 \frac{feet}{minute}} \approx \mbox{4 (or 3.78) minutes}
 \]</span></p>
