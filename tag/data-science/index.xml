@@ -205,13 +205,12 @@ Figure 3: Our database captured hundreds of zero or negative shop times.
 &lt;p&gt;&lt;img src=&#34;images/square.png&#34; width=&#34;65%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;If you remember from grade school, the area of a square is:&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-   \mbox{(Equation I.) Area of a Square} = (\mbox{Length of the Side}) ^ {2}
+   \mbox{(Equation I.)} \substack{\text{Area} \\ \text{of a Square}} = (\mbox{Length of the Side}) ^ {2}
 \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;
-&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;Furthermore, via the Pythagorean Theorem, the length of the diagonal is:&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-   \mbox{(Equation II.) Length of the Diagonal of a Square} = \mbox{Length of Side} * \sqrt{2}
+   \mbox{(Equation II.)} \substack{\text{Length of the Diagonal} \\ \text{of a Square}} = \mbox{Length of Side} * \sqrt{2}
 \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;By taking the square root of (Equation 1), (&lt;span class=&#34;math inline&#34;&gt;\(\sqrt[]{(\mbox{Length of the Side}) ^ {2}}\)&lt;/span&gt;), we now have a way to determine the length of the side of the store; more importantly, the shortest possible distance through the store - a straight line!&lt;/p&gt;
@@ -228,11 +227,10 @@ Figure 3: Our database captured hundreds of zero or negative shop times.
 &lt;span class=&#34;math display&#34;&gt;\[
   \mbox{By division, Shop Time} = \frac{\mbox{Distance Traveled}}{\mbox{Walking Pace}}
 \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;
-&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;Additional functional forms may include the following,&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-  \mbox{Shop Time} = \frac{\sum{\mbox{Distance Traveled}}}{\mbox{Walking Pace}} + \frac{\sum{\mbox{Items in Order}}}{\mbox{Item Identification Pace}} + ... + \epsilon 
+  \substack{\text{Shop} \\ \text{Time}} = \frac{\sum{\mbox{Distance Traveled}}}{\mbox{Walking Pace}} + \frac{\sum{\mbox{Items in Order}}}{\mbox{Item Identification Pace}} + ... + \epsilon 
 \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(\epsilon = \mbox{unexplainable error}\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;A human &lt;a href=&#34;https://en.wikipedia.org/wiki/Walking#:~:text=Although%20walking%20speeds%20can%20vary,miles%20per%20hour%20(mph)&#34;&gt;walks&lt;/a&gt; at roughly 3.1 Miles per Hour. After converting to feet per minute, we get 272.8 feet per minute.&lt;/p&gt;
@@ -242,7 +240,7 @@ Figure 3: Our database captured hundreds of zero or negative shop times.
 &lt;p&gt;Since we know the distance to the rear of the store and our walking pace, we now have a way to determine if our time to shop guess was reasonable.&lt;/p&gt;
 &lt;p&gt;We can now flag Shop Times in our data that are below the computed Minimum Shop Time threshold.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-  \mbox{Definition , The Minimum Shop Time} \approx \frac{\sqrt{2*\mbox{Area of a Store}}}{136.4 \frac{feet}{minute}}
+  \mbox{Definition,} \substack{\text{The Minimum} \\ \text{Shop Time}} \approx \frac{\sqrt{2*\mbox{Area of a Store}}}{136.4 \frac{feet}{minute}}
 \]&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;why-is-industry-different-part-4&#34; class=&#34;section level2&#34;&gt;
@@ -267,17 +265,17 @@ Figure 3: Our database captured hundreds of zero or negative shop times.
 &lt;p&gt;When attempting to model a complex world, sometimes it makes sense to keep your thinking simple. Here we developed a simple model to approximate the time to shop a single-item order. We are now able to use the equation and flag all orders for removal with shop times before the computed threshold for our training set. Let’s end with an example:&lt;/p&gt;
 &lt;p&gt;A typical small-size format &lt;a href=&#34;https://corporate.target.com/article/2018/07/small-format-stores#:~:text=Just%20how%20small%20do%20our,size%20130%2C000%20square%2Dfoot%20store.&#34;&gt;Target&lt;/a&gt; is about 40,000 square feet (full-size &lt;span class=&#34;math inline&#34;&gt;\(\approx\)&lt;/span&gt; 130,000 sq. ft.). That means we should expect the minimum Shop Time at a small-format Target to be&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-  \mbox{Target (small-size format) Minimum Shop Time} \approx \frac{\sqrt{\mbox{80,000}}}{136.4 \frac{feet}{minute}} \approx \mbox{2 (or 2.09) minutes}
+  \substack{\text{Target (small-size format)} \\ \text{Minimum Shop Time}} \approx \frac{\sqrt{\mbox{80,000}}}{136.4 \frac{feet}{minute}} \approx \mbox{2 (or 2.09) minutes}
 \]&lt;/span&gt;&lt;/p&gt;
 &lt;center&gt;
 or
 &lt;/center&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-  \mbox{Target (full-size format) Minimum Shop Time} \approx \frac{\sqrt{\mbox{260,000}}}{136.4 \frac{feet}{minute}} \approx \mbox{4 (or 3.78) minutes}
+  \substack{\text{Target (full-size format)} \\ \text{Minimum Shop Time}} \approx \frac{\sqrt{\mbox{260,000}}}{136.4 \frac{feet}{minute}} \approx \mbox{4 (or 3.78) minutes}
 \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;We can now remove all data below these computed thresholds. Amazing how a simple model can have profound impact on one’s thinking.&lt;/p&gt;
 &lt;p&gt;Never say you’ll be back in a minute!&lt;/p&gt;
-&lt;p&gt;Please feel free to leave a comment below and thanks for checking out Da Venchei Codes. 😄&lt;/p&gt;
+&lt;p&gt;Please feel free to leave a comment below. 😄&lt;/p&gt;
 &lt;p&gt;-V&lt;/p&gt;
 &lt;/div&gt;
 </description>
