@@ -19,47 +19,47 @@
   
   <url>
     <loc>https://davencheicodes.com/</loc>
-    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-22T10:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://davencheicodes.com/talk/example/</loc>
-    <lastmod>2020-11-07T19:15:45+00:00</lastmod>
+    <loc>https://davencheicodes.com/talk/2021-ds30-podcast/</loc>
+    <lastmod>2021-01-22T10:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://davencheicodes.com/tag/analytics/</loc>
-    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://davencheicodes.com/tag/data-science/</loc>
-    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://davencheicodes.com/tag/education/</loc>
-    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://davencheicodes.com/tag/industry/</loc>
-    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://davencheicodes.com/tag/machine-learning/</loc>
-    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://davencheicodes.com/post/2021-01-11-shop-time-insider-take/</loc>
-    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://davencheicodes.com/tags/</loc>
-    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -143,6 +143,11 @@
   </url>
   
   <url>
+    <loc>https://davencheicodes.com/talk/</loc>
+    <lastmod>2020-06-09T04:00:37+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://davencheicodes.com/categories/</loc>
   </url>
   
@@ -158,11 +163,6 @@
   
   <url>
     <loc>https://davencheicodes.com/publication/</loc>
-    <lastmod>2020-06-09T04:00:37+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://davencheicodes.com/talk/</loc>
     <lastmod>2020-06-09T04:00:37+00:00</lastmod>
   </url>
   

@@ -18,6 +18,7 @@
       <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://davencheicodes.com/post/2021-01-11-shop-time-insider-take/</guid>
       <description>
+&lt;script src=&#34;https://davencheicodes.com/post/2021-01-11-shop-time-insider-take/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;&lt;a href=&#34;https://shipt.tech/shop-time-and-the-area-of-a-square-dcc9cb055368&#34;&gt;Shop Time and the Area of a Square&lt;/a&gt; is an article written on July 20th, 2020 for my current employer, a grocery delivery company called Shipt, to articulate how we leveraged data analytics to understand the minimum shop time for finding one item at a retailer. Upon further review, that process has taught me a lot about developing machine learning models in industry. So I’d like to revisit the article with some additional commentary and insights on how Analytics drive ML Model Development (in industry).&lt;/p&gt;
