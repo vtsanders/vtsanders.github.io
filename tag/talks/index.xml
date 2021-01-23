@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>talks | Da Venchei Codes</title>
+    <link>https://davencheicodes.com/tag/talks/</link>
+      <atom:link href="https://davencheicodes.com/tag/talks/index.xml" rel="self" type="application/rss+xml" />
+    <description>talks</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Venchei Sanders © 2021</copyright><lastBuildDate>Fri, 22 Jan 2021 10:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://davencheicodes.com/media/share_image.jpeg</url>
+      <title>talks</title>
+      <link>https://davencheicodes.com/tag/talks/</link>
+    </image>
+    
+    <item>
+      <title>From Teaching to Tech</title>
+      <link>https://davencheicodes.com/talk/2021-ds30-podcast/</link>
+      <pubDate>Fri, 22 Jan 2021 10:00:00 +0000</pubDate>
+      <guid>https://davencheicodes.com/talk/2021-ds30-podcast/</guid>
+      <description>&lt;h2 id=&#34;from-teaching-to-tech&#34;&gt;From Teaching to Tech&lt;/h2&gt;
+&lt;p&gt;I speak with Pragmatic Institute’s Michael Cullen to discuss how becoming an educator has informed my work as a practitioner and some of my thoughts for those looking to break into the industry.&lt;/p&gt;
+&lt;h2 id=&#34;mentions-in-the-podcast&#34;&gt;Mentions in the Podcast&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://davencheicodes.com/post/2021-01-11-shop-time-insider-take&#34;&gt;Shop Time and the Area of a Square - Industry Insider Take&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
