@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>All Talks &amp; Presentations | Da Venchei Codes</title>
+    <title>Presentations &amp; Talks with Da Venchei | Da Venchei Codes</title>
     <link>https://davencheicodes.com/talk/</link>
       <atom:link href="https://davencheicodes.com/talk/index.xml" rel="self" type="application/rss+xml" />
-    <description>All Talks &amp; Presentations</description>
+    <description>Presentations &amp; Talks with Da Venchei</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Venchei Sanders © 2021</copyright>
     <image>
       <url>https://davencheicodes.com/media/share_image.jpeg</url>
-      <title>All Talks &amp; Presentations</title>
+      <title>Presentations &amp; Talks with Da Venchei</title>
       <link>https://davencheicodes.com/talk/</link>
     </image>
     

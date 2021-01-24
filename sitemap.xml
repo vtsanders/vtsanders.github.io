@@ -148,11 +148,6 @@
   </url>
   
   <url>
-    <loc>https://davencheicodes.com/talk/</loc>
-    <lastmod>2020-06-09T04:00:37+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://davencheicodes.com/categories/</loc>
   </url>
   
@@ -163,6 +158,11 @@
   
   <url>
     <loc>https://davencheicodes.com/post/</loc>
+    <lastmod>2020-06-09T04:00:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davencheicodes.com/talk/</loc>
     <lastmod>2020-06-09T04:00:37+00:00</lastmod>
   </url>
   
