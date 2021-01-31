@@ -56,9 +56,8 @@
 &lt;p&gt;In my experience, emphasis is not on the implementation of an advance method or model. The emphasis is on the leveraging data to solve a pertinent problem to the business. Amazing data is the gateway drug to such solution -not clever algorithms. As Charles Isbell has said, “the data is almost more important than the algorithm”.&lt;/p&gt;
 &lt;p&gt;So I’d like to go deeper. Below is the distribution of Shop Times for single-item orders.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;images/shop_times_dist0.png&#34; width=&#34;80%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;There you go - with a few lines of code in both R and SQL - we made a graph. Awesome!
-asd
-But what do we know about the actual task of shopping from this distribution? Some thoughts (after reading the graph from left to right):&lt;/p&gt;
+&lt;p&gt;There you go - with a few lines of code in both R and SQL - we made a graph. Awesome!&lt;/p&gt;
+&lt;p&gt;But what do we know about the actual task of shopping from this distribution? Some thoughts (after reading the graph from left to right):&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Some people are really fast shoppers with some data being negative (see the little blip on the left side of the graph)&lt;/li&gt;
 &lt;li&gt;The largest spike (aka mode) appears to occur at less than a minute of actual shopping time&lt;/li&gt;
