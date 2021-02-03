@@ -324,7 +324,7 @@
     
       <meta property="article:published_time" content="2021-01-11T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2021-01-22T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2021-01-31T00:00:00&#43;00:00">
   
 
   
@@ -357,7 +357,7 @@
   ],
   
   "datePublished": "2021-01-11T00:00:00Z",
-  "dateModified": "2021-01-22T00:00:00Z",
+  "dateModified": "2021-01-31T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -735,7 +735,7 @@
           Last updated on
       
     
-    Jan 22, 2021
+    Jan 31, 2021
   </span>
   
 
@@ -791,20 +791,24 @@
 <script src="https://davencheicodes.com/post/2021-01-11-shop-time-insider-take/index_files/header-attrs/header-attrs.js"></script>
 
 
-<p><a href="https://shipt.tech/shop-time-and-the-area-of-a-square-dcc9cb055368">Shop Time and the Area of a Square</a> is an article written on July 20th, 2020 for my current employer, a grocery delivery company called Shipt, to articulate how we leveraged data analytics to understand the minimum shop time for finding one item at a retailer. Upon further review, that process has taught me a lot about developing machine learning models in industry. So I’d like to revisit the article with some additional commentary and insights on how Analytics drive ML Model Development (in industry).</p>
-<p>From time to time, I enjoy listening to the Lex Fridman Podcast and recently I heard him interviewing Charles Isbell and Michael Littman; for anyone attempting to enter the space and deploy a machine learning model, the clip below is the ML gospel; I hope you enjoy it. 😄</p>
-<p>An astute modeler should know that a clever or fancy algorithm can lose or perform equally to a simpler model with superior data.</p>
+<div id="motivation" class="section level1">
+<h1>Motivation</h1>
+<p><a href="https://shipt.tech/shop-time-and-the-area-of-a-square-dcc9cb055368">Shop Time and the Area of a Square</a> is an article written on July 20th, 2020 for my current employer, a grocery delivery company called Shipt, to articulate how we leveraged some high school geometry to understand the minimum shop time for finding one item for a given retailer location.</p>
+<p>One day while descending a massive hill on my skateboard in SF, I realized that process had taught me a lot about the development lifecycle of ml models -in industry. So I’d like to revisit the article with some additional commentary and insights on how analytics drive ml model development (in industry).</p>
+<p><img src="images/stay_sexy.jpg" alt="Grocery Cart" width="30%" height="100%"/></p>
+<p>When I’m not skateboarding or watching Bama win titles, I enjoy listening to the Lex Fridman Podcast and, recently, I heard him interviewing Charles Isbell and Michael Littman. For anyone attempting to enter the space and deploy a machine learning model, the clip below is the ML gospel;</p>
+<p>An astute modeler should know that a clever or fancy algorithm can perform just as well or even worse than a simpler model with superior data.</p>
 <p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/8wVXyT7gKxI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 </p>
-<p><br></p>
+<p>I hope you enjoyed it. 😄</p>
 <p>So if you didn’t know - it’s the data, stupid! Stay close to the data because she’s your friend. The entire interview can be heard/watched <a href="https://youtu.be/yzMVEbs8Zz0">here</a>. <a href="https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf">A Few Useful Things to Know About Machine Learning</a> is another article that I found insightful about the use of data in algorithms and the desired goal of the Data Scientist or Modeler.</p>
 <div id="why-is-industry-different-part-1" class="section level2">
 <h2>Why is Industry Different (Part 1)?</h2>
-<p>In industry, the data is messy. In academics, not as much. Academic programs at both the undergraduate and (some) graduate levels ignore the Exploratory Data Analysis (EDA) aspect of model development.</p>
-<p>In my experience, emphasis is not on the deployment of an advance method or model. As Charles Isbell has said, “the data is almost more important than the algorithm”.</p>
+<p>In industry, the data is messy, contains missing values, full of outliers, or better yet -doesn’t exist and is difficult to obtain. In academics, not as much. Academic programs at both the undergraduate and (some) graduate levels ignore the Exploratory Data Analysis (EDA) aspect of model development.</p>
+<p>In my experience, emphasis is not on the implementation of an advance method or model. The emphasis is on the leveraging data to solve a pertinent problem to the business. Amazing data is the gateway drug to such solution -not clever algorithms. As Charles Isbell has said, “the data is almost more important than the algorithm”.</p>
 <p>So I’d like to go deeper. Below is the distribution of Shop Times for single-item orders.</p>
 <p><img src="images/shop_times_dist0.png" width="80%" style="display: block; margin: auto;" /></p>
 <p>There you go - with a few lines of code in both R and SQL - we made a graph. Awesome!</p>
@@ -812,18 +816,18 @@
 <ul>
 <li>Some people are really fast shoppers with some data being negative (see the little blip on the left side of the graph)</li>
 <li>The largest spike (aka mode) appears to occur at less than a minute of actual shopping time</li>
-<li>At roughly three minutes we see a peak, followed by decreasing instances of longer shop times</li>
+<li>At roughly three minutes, we see a peak followed by decreasing instances of longer shop times</li>
 <li>A very long right tail</li>
 </ul>
 <p>I hope that exercise shows the limited nature of seeing data only through the lens of the numbers on a table or graph.</p>
-<p>The actual task of shopping an order cannot be understood merely by staring at a graph and hypothesizing about shopper behavior. At Shipt, I am also a shopper. This business is about people, not machine learning models. So I physically did the work.</p>
+<p>The actual task of shopping an order cannot be understood merely by staring at a graph and hypothesizing about shopper behavior. At Shipt, I am also a shopper. This business is about people, not machine learning models. Armed with my reusable bag and an electric skateboard, I went undercover -as a Shipt Shopper.</p>
 <figure>
 <p><img src="images/venchei_shopper.jpg" alt="Venchei Shipt Shopper" width="40%" height="100%"/></p>
 <figcaption>
-I went into the field as an ‘undercover’ Shipt Shopper. 😉
+Meet Da Venchei Codes, your (undercover) Shipt Shopper. 😉
 </figcaption>
 </figure>
-<p>Giving students curated datasets dismisses how the game is played in reality and leaves a hole in the students’ fundamental training. Sometimes you gotta go into the field and actually do some heavy lifting (or shopping).</p>
+<p>Giving students curated datasets obfuscates how the game is played in reality and leaves a hole in the students’ fundamental training. Sometimes you gotta go into the field and actually do some heavy lifting (or shopping).</p>
 <p>So I open the Shipt Shopper app and see an order such as the following:</p>
 <div class="figure" style="text-align: center"><span id="fig:offercard"></span>
 <img src="images/order_offer_og.jpg" alt="OG - Order Offer Card" width="40%" />
@@ -832,7 +836,7 @@ Figure 1: OG - Order Offer Card
 </p>
 </div>
 <p>Since I want the experience of working as a professional Shipt Shopper, I skate to Foods Co. and shop a couple orders together. I believe (more seasoned) shoppers refer to these as ‘doubles’. This was a rookie mistake.</p>
-<p>You see while shopping in Alabama, I had a car. I’ve since relocated to my companies’ San Francisco office and currently commute via electric skateboard and public transportation such as BART or rideshare (LYFT/UBER).</p>
+<p>You see while shopping in Alabama, I had a car. I’ve since relocated to my company’s San Francisco office and currently commute via electric skateboard and public transportation such as BART or rideshare (LYFT/UBER).</p>
 <p>Shopping a ‘double’ resulted in the following at checkout:</p>
 <div class="row">
 <div class="col-md-6">
@@ -888,7 +892,7 @@ Order List Preview
 <li><p>The Data: <em>Do you have the data needed to solve the problem? Do you need to create an ETL pipeline for the data?</em></p></li>
 <li><p>Data Cleaning and Mining: <em>Not all data is good data. Choose wisely!</em></p>
 <ul>
-<li><em>Exploration with charts and graphs is always a winner but conduct some field research.</em></li>
+<li><em>Exploration with charts and graphs is always a winner but conduct some field research too.</em></li>
 </ul></li>
 <li><p>Baseline: <em>Set the baseline with a simple linear model, benchmark or heuristic.</em></p></li>
 <li><p>Feature Engineering: <em>Feature Engineering is domain specific. So know your business and your customer. Also, checkout Max Kuhn’s book, <a href="http://www.feat.engineering/">Feature Engineering and Selection</a>.</em></p></li>
@@ -896,13 +900,13 @@ Order List Preview
 <li><p>Deployment: <em>Get it into production.</em></p></li>
 <li><p>Anomaly Detection: <em>Model’s decay and drift over time. Automate the detection of anomalies becuase they will happen.</em></p></li>
 </ol>
-<p>Again, this business is about people and solving problems for them, not machine learning models. To actually understand the problem, I went into the Shopper App and delivered orders for members. I then leveraged that research and those experiences to help me get to know the data, its strengths and weaknesses.</p>
+<p>Again, this business is about people and solving problems for them, not machine learning models. To actually understand the problem, I went into the Shopper App and delivered orders for members. I then leveraged that research and those experiences to help me get to know the data.</p>
 </div>
 <div id="what-about-model-performance" class="section level2">
 <h2>What About Model Performance?</h2>
-<p>How well should a model perform? As my Econometrics Professor Matt Holt would say, “Depends on your Employer”. If we trained our model on data including possible outliers (on the left end of the distribution) then the model will perform poorly. Suppose you run a bank, under-predicting the model’s target (Shop Times for Shipt) could lead to financial ruin.</p>
+<p>How well should a model perform? As my Econometrics Professor Matt Holt would say, “Depends on your Employer”. If we trained our model on data including possible outliers (on the left end of the distribution), then the model will perform poorly. Suppose you run a bank, under-predicting the model’s target (Shop Times for Shipt) could lead to financial ruin.</p>
 <p>Suppose you’re a head coach preparing the team for a track meet or basketball game. As the coach, do you want the athlete that has trained for the event with ten mediocre practices or an athlete with 1000 days of varying forms of practice (shooting three pointers, free throws, layups, etc); The data matters, <strong><em>PERIOD</em></strong>.</p>
-<p>When modeling, generalization and representation matters. Stay close to the data and remember, “the data is almost more important than the algorithm.” A clever or fancy algorithm can lose or perform equally to a simpler model with superior data.</p>
+<p>When modeling, generalization and representation matters; thus, the latter athelete is most preferable.</p>
 <p>With that out of the way, let’s get back to the article…</p>
 </div>
 <div id="how-long-does-it-take-to-find-one-item-in-a-grocery-store" class="section level2">
@@ -1048,6 +1052,7 @@ or
 <p>Never say you’ll be back in a minute!</p>
 <p>Please feel free to leave a comment below. 😄</p>
 <p>-V</p>
+</div>
 </div>
 
     </div>
@@ -1329,6 +1334,8 @@ or
   <div class="article-widget content-widget-hr">
     <h3>Related</h3>
     <ul>
+      
+      <li><a href="/post/2021-01-25-reflection-on-transitioning/">Some Advice for Career Switchers</a></li>
       
       <li><a href="/talk/2021-ds30-podcast/">From Teaching to Tech</a></li>
       
